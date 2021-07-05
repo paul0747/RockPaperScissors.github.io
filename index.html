@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock,Paper,Scissors!</title>
+  </head>
+  <body>
+    <!--  -->
+    <section class="game">
+      <!-- SCORE BOARD FOR PLAYER AND COMPUTER -->
+      <div class="score">
+        <div class="player-score">
+          <h2>Player1</h2>
+          <p id="player-point">0</p>
+        </div>
+        <div class="pc-score">
+          <h2>Computer</h2>
+          <p id="computer-point">0</p>
+        </div>
+      </div>
+      <!-- SCORE BOARD FOR PLAYER AND COMPUTER -->
+
+      <!-- ROCK/PAPER/SCISSORS IMG  -->
+      <h1 id="text" class="winner">Choose an option!</h1>
+      <div class="game-image">
+        <img
+          class="images"
+          id="player"
+          height="200"
+          width="200"
+          src="./img/rock.svg"
+          alt="Gray Rock"
+        />
+        <img
+          class="images"
+          id="computer"
+          height="200"
+          width="200"
+          src="./img/rock.svg"
+          alt="Gray Rock"
+        />
+      </div>
+
+      <!-- <img height ="200" width="200" src="./img/paper.svg" alt="Gray Rock">
+    <img height ="200" width="200" src="./img/scissors.svg" alt="Gray Rock"> -->
+      <!-- ROCK/PAPER/SCISSORS IMG  -->
+
+      <!--  -->
+      <div class="choose-button">
+        <button id="rock-id" class="rock-btn" onclick="incrementButton()">
+          Rock
+        </button>
+        <button id="paper-id" class="paper-btn">Paper</button>
+        <button id="scissors-id" class="scissors-btn">Scissors</button>
+      </div>
+
+      <button
+        style="display: none"
+        id="reloadBtn"
+        onclick="refresh()"
+        class="reload-btn"
+      >
+        Restart Game!
+      </button>
+
+      <!-- <h1 class="winner">WINNER</h1> -->
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
+  </body>
+</html>
